@@ -1,12 +1,76 @@
+/* Important thing to remember is that these are all boxes!! so structure them as boxes within boxes like unreal GUI*/
+/* Windows xp style bar? */
+
+* {
+    box-sizing: border-box;
+  }
+
 body {
-    background-image: url("Resources/Jake.png");
+    background-color: #F5DCE0;
+}
 
 h1 { 
-    color : white;
+    color: black;
     text-align: center;
 }
 
 p {
     font-family: Verdana;
     font-size: 20px;
+}
+
+.content {
+    top: 80%;
+    left: 20%;
+    width: 80%;
+    height: 100%;
+    background-color: red;
+    margin: auto;
+}
+
+.banner {
+    border-style: solid;
+    border-color: #E18AAA;
+    border-width: 5px;
+    display: block;
+    width: 100%;
+    height: 20%;
+}
+
+.banner img{
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+.column {
+    background-color: green;
+    width: 100%;
+    display: table;
+}
+
+.column.center {
+    border-style: solid;
+    border-color: #E18AAA;
+    border-width: 5px;
+    background-color: #EFCFD4;
+    width: 60%;
+    display: table-cell;
+}
+
+.column.side {
+    border-style: solid;
+    border-color: #E18AAA;
+    border-width: 5px;
+    background-color: #EFCFD4;
+    width: 20%;
+    display: table-cell;
+}
+
+.footer {
+    border-style: solid;
+    border-color: #E18AAA;
+    border-width: 5px;
+    background-color: #EFCFD4;
+
 }
